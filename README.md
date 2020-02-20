@@ -119,11 +119,11 @@ Returns the position relative to the base, even if an reference frame is specifi
         motion_type=MT_JOINT
 )*
 
-Return the robot on home position pose[0, -90, 0, -90, -90, 0]
+Return the robot on home position ***pose[0, -90, 0, -90, -90, 0]***
 
                 robot.go_home()
 
-*- enable_moving_panel()*
+***- enable_moving_panel()***
 
 Displays the robot control panel. Allows you to move the robot using buttons on the screen,
 displays the pose and position in the console.
