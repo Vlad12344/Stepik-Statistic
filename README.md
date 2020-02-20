@@ -17,7 +17,7 @@ further robot works relative it.
 
                 robot.set_reference_frame(position([x,y,z],[r,p,w]))
  
-***- get_referance_frame()***
+***- get_reference_frame()***
 
 Return a dict with keys 'point' and 'rotation'
 
