@@ -93,6 +93,7 @@ Stop the robot from the Digital Input
         retract_velocity=0.3,
         number_of_input=1
 )*
+
 Mini case.
 
                 axis = 'x'
@@ -117,6 +118,7 @@ Returns the position relative to the base, even if an reference frame is specifi
         tcp_max_velocity=None,
         motion_type=MT_JOINT
 )*
+
 Return the robot on home position pose[0, -90, 0, -90, -90, 0]
 
                 robot.go_home()
