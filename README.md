@@ -1,19 +1,18 @@
-h1 Wrapper around RobotPulse version >= 1.6.0
+# Wrapper around RobotPulse version >= 1.6.0
 
-Latest version of thePulseApi: pip3 install pulse-api -i https://pip.rozum.com/simple
+Latest version of thePulseApi: <pip3 install pulse-api -i https://pip.rozum.com/simple>
 
-h2Connect to robot:
+## Connect to robot:
 
-'''html
-<from newPulse import *
-host = '127.0.0.0:8081'
-robot = NewRobotPulse(host)>
-'''
+        from newPulse import *
+        host = '127.0.0.0:8081'
+        robot = NewRobotPulse(host)
 
-h2 New function:
-    '''html
-    set_reference_frame(robot_position)
-    '''
+
+## New function:
+
+        set_reference_frame(robot_position)
+
         Set reference frame in the respect to the robot base,
         further robot works relative it.
 
