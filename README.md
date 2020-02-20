@@ -3,11 +3,11 @@
 Latest version of thePulseApi: <pip3 install pulse-api -i https://pip.rozum.com/simple>
 
 ## Connect to robot:
-
-        from newPulse import *
-        host = '127.0.0.0:8081'
-        robot = NewRobotPulse(host)
-
+'''ruby
+from newPulse import *
+host = '127.0.0.0:8081'
+robot = NewRobotPulse(host)
+'''
 
 ## New function:
 
