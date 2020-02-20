@@ -10,14 +10,14 @@
 
 ## New function:
 
-*- set_reference_frame(robot_position)*
+***- set_reference_frame(robot_position)***
 
 Set reference frame in the respect to the robot base,
 further robot works relative it.
 
                 robot.set_reference_frame(position([x,y,z],[r,p,w]))
  
-*- get_referance_frame()*
+***- get_referance_frame()***
 
 Return a dict with keys 'point' and 'rotation'
 
@@ -26,14 +26,14 @@ Return a dict with keys 'point' and 'rotation'
                 >>> {'point': {'x': 0.0, 'y': 0.0, 'z': 0.0},
                      'rotation': {'roll': 0.0, 'pitch': 0.0, 'yaw': 0.0}}
 
-*- run_positions(
+***- run_positions(
             target_positions,
             speed=None,
             velocity=None,
             acceleration=None,
             tcp_max_velocity=None,
             motion_type=MT_JOINT
-)*
+)***
 
 Starts the list of points recalculated relative to the reference coordinate system.
 
@@ -45,21 +45,21 @@ Starts the list of points recalculated relative to the reference coordinate syst
 
                 robot.run_positions(target_positions, speed=5)
 
-*- set_position(
+***- set_position(
             target_position,
             speed=None,
             velocity=None,
             acceleration=None,
             tcp_max_velocity=None,
             motion_type=MT_JOINT
-    )*
+    )***
 
 Set the robot in the given position. If an reference frame is specified,
 the robot moves relative to it.
 
                  set_position(position([x, y, z], [r, p, w]), speed=5)
 
-*- untwist()*
+***- untwist()***
 
 Allows the robot exit from TWISTED state, after the rotors were manually rotated into ~correct place
 
@@ -67,7 +67,7 @@ Allows the robot exit from TWISTED state, after the rotors were manually rotated
 
                 >>> <Response [503]>  (if all is OK)
 
-*- move_along_axis(axis, distance, velocity)*
+***- move_along_axis(axis, distance, velocity)***
 
 Allows to move along one of each axis: 'x', 'y', 'z', 'roll', 'pitch', 'yaw'
 at a given distance, at a specified speed
@@ -78,21 +78,21 @@ at a given distance, at a specified speed
 
                 robot.move_along_axis(axis, distance, velocity)
 
-*- stop_by_digital_input(number_of_input)*
+***- stop_by_digital_input(number_of_input)***
 
 Stop the robot from the Digital Input
 
                 number_of_DI = 1
                 robot.stop_by_digital_input(number_of_DI)
 
-*- sensing(
+***- sensing(
         axis,
         detect_distance,
         velocity,
         retract_distance=0.01,
         retract_velocity=0.3,
         number_of_input=1
-)*
+)***
 
 Mini case.
 
@@ -102,7 +102,7 @@ Mini case.
 
                 robot.sensing(axis, detect_distance, velocity)
 
-*- get_position_rel_base()*
+***- get_position_rel_base()***
 
 Returns the position relative to the base, even if an reference frame is specified.
 
@@ -111,13 +111,13 @@ Returns the position relative to the base, even if an reference frame is specifi
                 >>> {'point': {'x': -0.09161, 'y': -0.2911, 'z': 1.07063},
                      'rotation': {'roll': 3.08421, 'pitch': 0.72008, 'yaw':0.17362}}
 
-*- go_home(
+***- go_home(
         speed=None,
         velocity=None,
         acceleration=None,
         tcp_max_velocity=None,
         motion_type=MT_JOINT
-)*
+)***
 
 Return the robot on home position ***pose[0, -90, 0, -90, -90, 0]***
 
