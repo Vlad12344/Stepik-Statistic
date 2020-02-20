@@ -2,12 +2,12 @@ h1 Wrapper around RobotPulse version >= 1.6.0
 
 Latest version of thePulseApi: pip3 install pulse-api -i https://pip.rozum.com/simple
 
-h2 Connect to robot:
+h2Connect to robot:
 
 '''html
-from newPulse import *
+<from newPulse import *
 host = '127.0.0.0:8081'
-robot = NewRobotPulse(host)
+robot = NewRobotPulse(host)>
 '''
 
 h2 New function:
