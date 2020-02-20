@@ -3,46 +3,39 @@
 Latest version of thePulseApi: <pip3 install pulse-api -i https://pip.rozum.com/simple>
 
 ## Connect to robot:
-'''ruby
-from newPulse import *
-host = '127.0.0.0:8081'
-robot = NewRobotPulse(host)
-'''
+
+                from newPulse import *
+                host = '127.0.0.0:8081'
+                robot = NewRobotPulse(host)
 
 ## New function:
 
-        set_reference_frame(robot_position)
+- set_reference_frame(robot_position)
 
-        Set reference frame in the respect to the robot base,
-        further robot works relative it.
+Set reference frame in the respect to the robot base,
+further robot works relative it.
 
-        '''html
-        robot.set_reference_frame(position([x,y,z],[r,p,w]))
-        '''
+                robot.set_reference_frame(position([x,y,z],[r,p,w]))
+ 
+- get_referance_frame()
 
-    '''html
-    get_referance_frame()
-    '''
-        Return a dict with keys 'point' and 'rotation'
+Return a dict with keys 'point' and 'rotation'
 
-        '''html
-            robot.get_reference_frame()
+                robot.get_reference_frame()
 
-            >>> {'point': {'x': 0.0, 'y': 0.0, 'z': 0.0},
-                 'rotation': {'roll': 0.0, 'pitch': 0.0, 'yaw': 0.0}}
-        '''
+                >>> {'point': {'x': 0.0, 'y': 0.0, 'z': 0.0},
+                     'rotation': {'roll': 0.0, 'pitch': 0.0, 'yaw': 0.0}}
 
-    '''html
-    run_positions(
+- run_positions(
             target_positions,
             speed=None,
             velocity=None,
             acceleration=None,
             tcp_max_velocity=None,
             motion_type=MT_JOINT
-        )
-    '''
-        Starts the list of points recalculated relative to the reference coordinate system.
+)
+
+Starts the list of points recalculated relative to the reference coordinate system.
 
         '''html
             target_positions = [
