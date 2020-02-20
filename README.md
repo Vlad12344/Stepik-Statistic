@@ -102,7 +102,7 @@ Mini case.
 
                 robot.sensing(axis, detect_distance, velocity)
 
-* - get_position_rel_base()*
+*- get_position_rel_base()*
 
 Returns the position relative to the base, even if an reference frame is specified.
 
