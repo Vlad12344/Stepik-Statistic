@@ -10,14 +10,14 @@ Latest version of thePulseApi: **pip3 install pulse-api -i https://pip.rozum.com
 
 ## New function:
 
-*- set_reference_frame(robot_position)
+*- set_reference_frame(robot_position)*
 
 Set reference frame in the respect to the robot base,
 further robot works relative it.
 
                 robot.set_reference_frame(position([x,y,z],[r,p,w]))
  
-*- get_referance_frame()
+*- get_referance_frame()*
 
 Return a dict with keys 'point' and 'rotation'
 
@@ -33,7 +33,7 @@ Return a dict with keys 'point' and 'rotation'
             acceleration=None,
             tcp_max_velocity=None,
             motion_type=MT_JOINT
-)
+)*
 
 Starts the list of points recalculated relative to the reference coordinate system.
 
@@ -52,7 +52,7 @@ Starts the list of points recalculated relative to the reference coordinate syst
             acceleration=None,
             tcp_max_velocity=None,
             motion_type=MT_JOINT
-    )
+    )*
 
 Set the robot in the given position. If an reference frame is specified,
 the robot moves relative to it.
